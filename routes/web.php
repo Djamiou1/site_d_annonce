@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+Route::get('/', [App\Http\Controllers\AdController::class, 'index'])->name('welcome');
 
 
 
@@ -34,3 +32,7 @@ Route::post('/annonce', [App\Http\Controllers\AdController::class, 'store'])->na
 //recherce
 Route::post('/search', [App\Http\Controllers\AdController::class, 'search'])->name('ad.search');
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -24,7 +24,7 @@ class AdController extends Controller
     {
         $ads = DB::table('ads')->orderBy('created_at' ,'DESC')->paginate(8);
 
-        return view('ads', compact('ads')); 
+        return view('welcome', compact('ads')); 
     }
     
 

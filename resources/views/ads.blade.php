@@ -26,7 +26,7 @@
 
                   <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
                      <img class="card-img-top img-fluid" style="max-height:55%;object-fit:cover;border-radius:30px;"
-                                             src="https://th.bing.com/th/id/OIP.p86rdRHFhLipxNkZYCmH7wHaKs?w=205&h=296&c=7&r=0&o=5&pid=1.7"
+                                             src="https://th.bing.com/th/id/OIP.ULw-7auQtCdoRPLo5lVzfQAAAA?w=205&h=277&c=7&r=0&o=5&pid=1.7"
                      alt="Card image"style="">
                      <div class="card-body">
                            <h6 class="card-title">{{ $ad->title }}</h6>
@@ -38,6 +38,34 @@
                   </div>
               </div> 
               <div class="col-xl-2 col-lg-3 col-md-3 fl col-sm-6 col-6">
+                   <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
+                     <img class="card-img-top img-fluid" style="max-height:55%;object-fit:cover;border-radius:30px;"
+                                             src="https://th.bing.com/th/id/OIP.mdcIQ-VF1I8Ioh9kL1Ra3gHaLH?w=204&h=306&c=7&r=0&o=5&pid=1.7"
+                     alt="Card image">
+                     <div class="card-body">
+                           <h6 class="card-title" style="color:#1B0101;">{{ $ad->title }}</h6>
+                           <h6 class="card-text my-3 text-success"><em style="border-radius:20px;font-weight:bold; padding:7px;box-shadow:0 0 2px silver;filter:drop-shadow(0 0 2px silver);background-color:rgba(0, 255, 0,0.3);">{{ $ad->price }} F</em></h6>
+                           <h6 class="card-text">{{ $ad->localisation }}</h6>
+                           <small class="card-text text-success">{{ Carbon\Carbon::parse($ad->created_at)->diffForHumans() }}</small>
+                           
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-2 col-lg-3 col-md-3 fl col-sm-6 col-6">
+                   <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
+                     <img class="card-img-top img-fluid" style="max-height:55%;object-fit:cover;border-radius:30px;"
+                                             src="https://th.bing.com/th/id/OIP.UUZDX1PNdfZ8PJvxpUdt8wHaLH?w=204&h=306&c=7&r=0&o=5&pid=1.7"
+                     alt="Card image">
+                     <div class="card-body">
+                           <h6 class="card-title" style="color:#1B0101;">{{ $ad->title }}</h6>
+                           <h6 class="card-text my-3 text-success"><em style="border-radius:20px;font-weight:bold; padding:7px;box-shadow:0 0 2px silver;filter:drop-shadow(0 0 2px silver);background-color:rgba(0, 255, 0,0.3);">{{ $ad->price }} F</em></h6>
+                           <h6 class="card-text">{{ $ad->localisation }}</h6>
+                           <small class="card-text text-success">{{ Carbon\Carbon::parse($ad->created_at)->diffForHumans() }}</small>
+                           
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-2 col-lg-3 col-md-3 fl col-sm-6 col-6">
                    <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
                      <img class="card-img-top img-fluid" style="max-height:55%;object-fit:cover;border-radius:30px;"
                                              src="https://th.bing.com/th/id/OIP.sqk4JXHM2tD5THJH33XqbAHaJQ?w=208&h=260&c=7&r=0&o=5&dpr=1.05&pid=1.7"
