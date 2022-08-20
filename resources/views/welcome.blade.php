@@ -12,6 +12,7 @@
                     <!-- additional  CSS  -->
         <link rel="stylesheet" href="css/style.css">
                     <!-- END additional CSS -->
+        <script src="https://kit.fontawesome.com/055e26f696.js" crossorigin="anonymous"></script>
         <!-- Font
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 

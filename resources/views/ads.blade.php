@@ -24,9 +24,9 @@
             @foreach($ads as $ad)
               <div class="col-xl-2 col-lg-3 col-md-3 fl col-sm-6 col-6">
 
-                  <!-- <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
+                  <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
                      <img class="card-img-top img-fluid" style="max-height:55%;object-fit:cover;border-radius:30px;"
-                                             src="https://th.bing.com/th/id/OIP.tdV6d9eaJUXN8c3V40gUWQHaD4?w=208&h=109&c=7&r=0&o=5&dpr=1.05&pid=1.7"
+                                             src="https://th.bing.com/th/id/OIP.p86rdRHFhLipxNkZYCmH7wHaKs?w=205&h=296&c=7&r=0&o=5&pid=1.7"
                      alt="Card image"style="">
                      <div class="card-body">
                            <h6 class="card-title">{{ $ad->title }}</h6>
@@ -35,8 +35,9 @@
                            <small class="card-text text-success">{{ Carbon\Carbon::parse($ad->created_at)->diffForHumans() }}</small>
                            
                      </div>
-                  </div> -->
-
+                  </div>
+              </div> 
+              <div class="col-xl-2 col-lg-3 col-md-3 fl col-sm-6 col-6">
                    <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
                      <img class="card-img-top img-fluid" style="max-height:55%;object-fit:cover;border-radius:30px;"
                                              src="https://th.bing.com/th/id/OIP.sqk4JXHM2tD5THJH33XqbAHaJQ?w=208&h=260&c=7&r=0&o=5&dpr=1.05&pid=1.7"
@@ -49,7 +50,8 @@
                            
                      </div>
                   </div>
-               
+               </div> 
+              <div class="col-xl-2 col-lg-3 col-md-3 fl col-sm-6 col-6">
 
                
                   <div class="card text-center bg-light" style="height:350px;margin-bottom:7px;border:none;">
