@@ -13,7 +13,7 @@ class Adsrequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class Adsrequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'title' => ['required', 'unique:ads'],
+            'image' => 'sometimes|image|max:5000',
+            'description' => 'required',
+            'price' => ['numeric', 'required'],
+            'localisation' => ['required']
         ];
     }
 }

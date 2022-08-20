@@ -15,10 +15,22 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+
+
 require __DIR__.'/auth.php';
+
+//ad routes
+Route::get('/annonces', [App\Http\Controllers\AdController::class, 'index'])->name('ad.index');
+Route::get('/annonce', [App\Http\Controllers\AdController::class, 'create'])->name('ad.create');
+Route::post('/annonce', [App\Http\Controllers\AdController::class, 'store'])->name('ad.store');
+//recherce
+Route::post('/search', [App\Http\Controllers\AdController::class, 'search'])->name('ad.search');
+
