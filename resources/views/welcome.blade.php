@@ -92,9 +92,7 @@
             </button>
             <div class="collapse navbar-collapse" id="">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item liste">
-                        <h5><a class="nav-link text-success" href="{{ route('ad.index')}}">Offres</a></h5>
-                    </li>
+                    
                     @auth
                     <li class="nav-item liste">
                         <h5><a class="nav-link text-success" href="{{ route('ad.create')}}">Publier une annonce</a></h5>
